@@ -1,0 +1,61 @@
+Date,Company,Product,Units
+2015-01-21,Streeplex,Hardware,11
+2015-01-09,Streeplex,Service,abc
+2015-01-06,Initech,Hardware,-17
+2015-01-02,Hooli,Hardware,
+2015-01-11,Hooli,Hardware,11
+2015-01-01,Acme Coporation,Software,18
+2015-01-24,Initech,Software,1
+2015-01-25,Initech,Service,6
+2015-01-13,Hooli,Service,7
+2015-01-03,Hooli,Service,19
+2015-01-16,Hooli,Hardware,17
+2015-01-16,Initech,Service,13
+2015-01-20,Acme Coporation,Hardware,12
+2015-01-26,Acme Coporation,Software,14
+2015-01-15,Acme Coporation,Service,16
+2015-01-06,Acme Coporation,Software,16
+2015-01-15,Mediacore,Hardware,7
+2015-01-27,Streeplex,Service,18
+2015-01-20,Streeplex,Software,13
+2015-01-16,Mediacore,Service,8
+2015-02-26,Streeplex,Service,4
+2015-02-16,Hooli,Software,10
+2015-02-03,Initech,Software,13
+2015-02-02,Hooli,Software,3
+2015-02-25,Initech,Service,10
+2015-02-05,Acme Coporation,Software,19
+2015-02-09,Streeplex,Service,19
+2015-02-11,Initech,Software,7
+2015-02-04,Acme Coporation,Hardware,14
+2015-02-09,Mediacore,Software,7
+2015-02-07,Acme Coporation,Hardware,1
+2015-02-11,Hooli,Software,4
+2015-02-26,Streeplex,Service,1
+2015-02-05,Hooli,Service,10
+2015-02-04,Streeplex,Software,13
+2015-02-19,Mediacore,Service,10
+2015-02-19,Mediacore,Hardware,16
+2015-02-02,Mediacore,Hardware,9
+2015-02-21,Mediacore,Software,3
+2015-02-21,Hooli,Hardware,3
+2015-03-22,Mediacore,Software,6
+2015-03-12,Initech,Service,19
+2015-03-22,Streeplex,Software,8
+2015-03-15,Hooli,Hardware,19
+2015-03-17,Hooli,Hardware,10
+2015-03-16,Mediacore,Software,3
+2015-03-25,Initech,Hardware,9
+2015-03-25,Streeplex,Hardware,12
+2015-03-26,Streeplex,Software,3
+2015-03-06,Mediacore,Software,17
+2015-03-22,Initech,Hardware,11
+2015-03-17,Hooli,Hardware,8
+2015-03-28,Acme Coporation,Service,5
+2015-03-13,Streeplex,Hardware,8
+2015-03-06,Mediacore,Software,17
+2015-03-13,Initech,Software,11
+2015-03-27,Mediacore,Software,6
+2015-03-21,Mediacore,Hardware,19
+2015-03-15,Initech,Hardware,18
+2015-03-13,Streeplex,Software,9
