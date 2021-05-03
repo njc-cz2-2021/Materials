@@ -1,0 +1,128 @@
+﻿body {
+    margin: 5px;
+    padding: 0;
+    border: 0;
+    text-align: justify;
+}
+
+.product-list {
+    margin: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    grid-auto-rows: minmax(300px, auto);
+}
+
+.product {
+    border-radius: 15px;
+    border: 1px lightgray solid;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+}
+.product-image{
+    padding:5px;
+    flex:1;
+    text-align: center;
+    align-items: center;
+    display:flex;
+    
+ }
+ img {
+     width:100%;
+ }
+.product-text {
+    padding: 5px;
+    background-color:rgba(111, 110, 110, 0.1);
+    flex:1;
+}
+.product-name {
+    color:steelblue;
+    font-family:'Comic Sans MS';
+    font-size:1.5rem;
+}
+.product-description {
+    color: black;
+    font-family: Arial;
+    font-size: 0.8rem;
+    font-style: italic;    
+}
+.product-price {
+    color:orange;
+    font-weight:bolder;
+    font-family: Arial;
+    font-size: 1.5rem;
+    
+}
+
+.product-description li {
+    text-align: left;
+}
+.menu {
+    background-color: black;
+    color: white;
+    height:50px;
+}
+#logo {
+    float:right;
+    width:auto;
+    height:50px;
+}
+.menu ul {
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding:0;   
+}
+.menu li{
+    padding: 1em 1em;
+    font-family: Arial;
+    font-size: 1em;
+}
+.menu li:hover {
+        background-color: dimgrey;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .product {
+        background-color: white;
+        padding: 10px;
+        margin: 5px;
+        flex: 1 10%;
+    }
+
+    .product-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 100%;
+    }
+    .menu {
+        width:100%;
+        height:auto;
+    }
+    .menu ul {
+            margin:0;
+            list-style: none;
+            padding: 0;
+            display:block;
+    }
+   
+    .menu li {
+        padding: 0 0.25em;
+        font-family: Arial;
+        font-size: 1em;
+        text-align: left;
+        border-bottom: 1px lightgray solid;
+    }
+
+}
+
+
+
