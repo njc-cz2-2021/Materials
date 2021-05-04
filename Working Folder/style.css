@@ -1,0 +1,17 @@
+.box{
+    align-items: center;
+    margin:auto;
+    width:25%;
+    padding: 1em;
+    border-radius: 10px;
+    background:grey
+}
+
+.row {
+    display: flex;
+    text-align: center;
+  }
+  
+.column {
+    flex: 50%;
+}
