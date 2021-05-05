@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flask Template Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        .container {
+            margin: auto;
+            width: 20%
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>My string: {{my_string}}</p>
+        <p>Value from the list: {{my_list[3]}}</p>
+        <p>Loop through the list:</p>
+        <ul>
+            {% for n in my_list %}
+            {% if n%2==0 %}
+            <li>{{n}}</li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+        <div class='input_stuff'>
+            <form action='/notice' method='POST'>
+                <div>
+                    First Name <input type='text' name='first_name'>
+                </div>
+                <div>
+                    Last Name <input type='text' name='last_name'>
+                </div>
+                <div>
+                    <input type='submit' name='submit'>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
