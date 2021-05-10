@@ -1,0 +1,12 @@
+#outer_box{
+    margin:auto;
+    width:30%;
+    border:1px red;
+    padding:1em;
+    background: grey;
+    border-radius: 10px;
+}
+
+#submit_button{
+    text-align:right;
+}
