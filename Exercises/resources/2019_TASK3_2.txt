@@ -1,0 +1,4 @@
+ToDo("reading", "Try some Shakespeare")
+ToDo("shopping", "Consider items to recycle")
+ToDo("reading", "Search on the web")
+ToDo("reading", "Go to the library")

@@ -1,0 +1,4 @@
+ToDo("reading", "Try some Shakespeare")
+ToDo("shopping", "buy bread")
+DatedToDo("2019-11-21", "shopping", "buy lemons")
+ToDo("watching", "Go to the cinema")
