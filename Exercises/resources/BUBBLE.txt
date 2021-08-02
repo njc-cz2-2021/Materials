@@ -1,0 +1,13 @@
+WHILE NoSwaps = FALSE
+   NoSwaps = TRUE
+   FOR Posn = 1 TO UpperBound - 1
+      IF Admissions(Posn) > Admissions(Posn + 1)
+         THEN
+            // swap
+            NoSwaps = FALSE
+            Temp = Admissions(Posn)
+            Admissions(Posn) = Admissions(Posn + 1)
+            Admissions(Posn + 1) = Temp
+       ENDIF
+    ENDFOR
+ENDWHILE
