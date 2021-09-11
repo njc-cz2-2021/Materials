@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Product</title>
+    <style>
+    form {
+            /* Just to center the form on the page */
+            margin: 10px auto;
+            width: 600px;
+            /* To see the outline of the form */
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+        }
+        form div + div {
+            margin-top: 1em;
+        }
+        label {
+            /* To make sure that all labels have the same size and are properly aligned */
+            display: inline-block;
+            width: 100px;
+            height:1.5em;
+            text-align: right;
+        }
+        input, textarea {
+            font: 1em sans-serif;
+            /* To give the same size to all text fields */
+            width: 300px;
+            height:1.5em;
+            box-sizing: border-box;
+            /* To harmonize the look & feel of text field border */
+            border: 1px solid #999;
+        }
+        textarea {
+            /* To properly align multiline text fields with their labels */
+            vertical-align: top;
+            /* To give enough room to type some text */
+            height: 5em;
+        }
+    </style>
+</head>
+<body>
+    <form action="/add" method="post" enctype = "multipart/form-data">
+        <div>
+            <label for="name">Product Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div>
+            <label for="price">Price:</label>
+            <input type="number" step="0.50" id="price" name="price">
+        </div>
+        <div>
+            <label for="description">Product Description:</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+        <div>
+            <label for="image">Product image:</label>
+            <input type="file" id="image" name="image">
+        </div>
+        <div class="button">
+            <button type="submit">Add Product</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,7 @@
+John Tan,2000-06-01,Person
+Jane Smith,2000-02-01,Person
+William Lin,1980-03-10,Staff
+Evan O'Reilly,2004-04-15,Student
+Sally Jones,1995-06-19,Staff
+Mike Green,2010-07-21,Student
+Betty Wang,2003-12-25,Student

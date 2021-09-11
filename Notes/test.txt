@@ -1,0 +1,19 @@
+```python
+>def CreateWorld():
+>    ##Some code here.
+>
+>def PlayerChar():
+>    ##Some code here.
+>
+>def EnemyChar1():
+>    ##Some code here.
+>
+>def EnemyChar2():
+>    ##Some code here.
+>
+>def EnemyChar3():
+>    ##Some code here.
+>
+>def EnemyChar4():
+>     ##Some code here.
+```

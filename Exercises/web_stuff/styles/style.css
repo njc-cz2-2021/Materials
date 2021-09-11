@@ -1,0 +1,20 @@
+body {
+  background: green;
+}
+
+#container {
+  background: blue;
+  width: 500px;
+  margin: 0 auto; /* how you centre align a box 
+                     / non-text */
+  margin-top: 50px;
+  padding: 20px;
+  border: 10px solid white;
+}
+
+#inner {
+  background: red;
+  padding: 10px;
+  padding-bottom: 99px;
+  border: 20px solid purple;
+}
