@@ -1,0 +1,73 @@
+[
+	{
+	"brand": "orange",
+	"model": "22",
+	"colour": "black",
+	"price": 888,
+	"quantity": 12
+	},
+	{
+	"brand": "solo",
+	"model": "A11",
+	"colour": "black",
+	"price": 699,
+	"quantity": 8
+	},
+	{
+	"brand": "yala",
+	"model": "M3",
+	"colour": "white",
+	"price": 399,
+	"quantity": 10
+	},
+	{
+	"brand": "gaga",
+	"model": "Y6",
+	"colour": "white",
+	"price": 333,
+	"quantity": 10
+	},
+	{
+	"brand": "solo",
+	"model": "A11",
+	"colour": "white",
+	"price":  699,
+	"warranty": 2,
+	"quantity": 7
+	},
+	{
+	"brand": "solo",
+	"model": "A22",
+	"colour": "gold",
+	"price": 788,
+	"quantity": 5
+	},
+	{
+	"brand": "iron",
+	"model": "XY",
+	"colour": "gold",
+	"price": 999,
+	"quantity": 3
+	},
+	{
+	"brand": "iron",
+	"model": "XY",
+	"colour": "black",
+	"price": 999,
+	"quantity": 8
+	},
+	{
+	"brand": "gaga",
+	"model": "Y5",
+	"colour": "blue",
+	"price": 444,
+	"quantity": 6
+	},
+	{
+	"brand": "orange",
+	"model": "21",
+	"colour": "black",
+	"price": 777,
+	"quantity": 9
+	}
+]
