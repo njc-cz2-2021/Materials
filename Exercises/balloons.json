@@ -1,0 +1,26 @@
+[
+    {
+        "amount": 88,
+        "colours": ["red", "yellow"],
+        "design": "car",
+        "helium": "no"
+    },
+    {
+        "amount": 14,
+        "colours": ["blue", "green"],
+        "design": "cloud",
+        "helium": null
+    },
+    {
+        "amount": 75,
+        "colours": ["red", "blue"],
+        "design": "flower",
+        "helium": "yes"
+    },
+    {
+        "amount": 38,
+        "colours": ["red", "blue", "black"],
+        "design": "bag",
+        "helium": "no"
+    }
+]
