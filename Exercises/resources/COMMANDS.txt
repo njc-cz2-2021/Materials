@@ -1,0 +1,7 @@
+Insert('Ali', 1)
+Insert('Jack', 1)
+Insert('Ben',2)
+Delete(1)
+Insert('Jane', 2)
+Insert('Ken', 3)
+Delete(2)
