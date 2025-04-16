@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flask Template Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        .container {
+            margin: auto;
+            width: 20%
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>My string: {{my_string}}</p>
+        <p>Value from the list: {{my_list[3]}}</p>
+        <p>Loop through the list:</p>
+        <ul>
+            {% for n in my_list %}
+                <li>{{n}}</li>
+            {% endfor %}
+        </ul>
+        <div class='input_stuff'>
+            <form action='/notice' method='POST'>
+                <div>
+                    First Name <input type='text' name='first_name'>
+                </div>
+                <div>
+                    Last Name <input type='text' name='last_name'>
+                </div>
+                <div>
+                    <input type='submit' name='submit'>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+      <h2>This is part of my base template</h2>
+      <br>
+      {% block content %}{% endblock %}
+      <br>
+      <h2>This is part of my base template</h2>
+      <br>
+      <div class="footer">
+        {% block footer %}
+          Watch! This will be added to my base and child templates using the super powerful super block!
+          <br>
+          <br>
+          <br>
+        {% endblock %}
+      </div>
+    </div>
+    </div>
+</body>
+
+</html>
