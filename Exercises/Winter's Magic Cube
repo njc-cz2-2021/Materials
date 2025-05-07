@@ -1,0 +1,172 @@
+{
+ "cells": [
+  {
+   "attachments": {},
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Winter's Magic Cube\n",
+    "\n",
+    "Rubiks' cubes are popular kids toys that are not only fun but also brain-teasing. They come in many different sizes, from 2X2 and 3X3 all the way to 17X17. A 2X2 cube has over 3 million possible combinations, while a 3X3 cube has over 43 quintillion possible combinations."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Task 1: My Cube Is Now 2D\n",
+    "\n",
+    "A 2X2 cube has 8 individual pieces and 6 different colours. \n",
+    "\n",
+    "<center>\n",
+    "\n",
+    "<img src=\"/workspaces/Materials/Exercises/img/2x2_cube.jpg\" width = 300><br>\n",
+    "\n",
+    "</center>\n",
+    "\n",
+    "In python, it is not easy to represent this cube in 3D, hence, we must flatten it to 2D. An example is shown below, where the face in the center is the face facing the player and the face on the far right is facing opposite the player. We can call this the list representation of a cube.\n",
+    "\n",
+    "<center>\n",
+    "\n",
+    "<img src=\"/workspaces/Materials/Exercises/img/2d_cube.png\" width = 500><br>\n",
+    "\n",
+    "</center>\n",
+    "\n",
+    "This cube can be represented in nested lists. Each face is its own list of colours, in the order of: [top left, top right, bottom left, bottom right]. Each colour is a variable that stores the ANSI value of that colour.\n",
+    "\n",
+    "``` python\n",
+    "unscrambled_cube = [[red, red, red, red],              #front face\n",
+    "                    [blue, blue, blue, blue],          #right face\n",
+    "                    [orange, orange, orange, orange],  #back face\n",
+    "                    [green, green, green, green],      #left face\n",
+    "                    [yellow, yellow, yellow, yellow],  #top face\n",
+    "                    [white, white, white, white]]      #bottom face\n",
+    "```\n",
+    "\n",
+    "Store the above cube state in this format in `scrambled_cube`."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#TASK 1\n",
+    "\n",
+    "#DO NOT DELETE\n",
+    "red = \"\\033[41m\" + '  ' + '\\033[0m'\n",
+    "blue = \"\\033[44m\" + '  ' + '\\033[0m'\n",
+    "orange = \"\\033[48;5;215m\" + '  ' + '\\033[0m'\n",
+    "green = \"\\033[42m\" + '  ' + '\\033[0m'\n",
+    "yellow = \"\\033[43m\" + '  ' + '\\033[0m'\n",
+    "white = \"\\033[47m\" + '  ' + '\\033[0m'\n",
+    "\n",
+    "scrambled_cube = []"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "The `print_cube` function below prints out a 2D rendition of a 2X2 cube given an appropriate list. Try it with `scrambled_cube`."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def print_cube(cube_list):\n",
+    "    print('      ' + cube_list[4][0] + ' ' + cube_list[4][1])\n",
+    "    print('      ' + cube_list[4][2] + ' ' + cube_list[4][3])\n",
+    "    print(cube_list[3][0] + ' ' + cube_list[3][1] + ' ' + cube_list[0][0] + ' ' + cube_list[0][1] + ' ' + cube_list[1][0] + ' ' + cube_list[1][1] + ' ' + cube_list[2][0] + ' ' + cube_list[2][1])\n",
+    "    print(cube_list[3][2] + ' ' + cube_list[3][3] + ' ' + cube_list[0][2] + ' ' + cube_list[0][3] + ' ' + cube_list[1][2] + ' ' + cube_list[1][3] + ' ' + cube_list[2][2] + ' ' + cube_list[2][3])\n",
+    "    print('      ' + cube_list[5][0] + ' ' + cube_list[5][1])\n",
+    "    print('      ' + cube_list[5][2] + ' ' + cube_list[5][3])\n",
+    "\n",
+    "print_cube(scrambled_cube)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Task 2: Time To Mess Up This Cube\n",
+    "There are 12 different moves that a 2X2 cube can undergo, each rotate a specific side of the cube clockwise.: U, D, R, L, F, B; as well as their inverse moves: U', D', R', L', F', B'.\n",
+    "\n",
+    "<center>\n",
+    "\n",
+    "<img src=\"/workspaces/Materials/Exercises/img/cube_notation.png\" width = 600><br>\n",
+    "\n",
+    "</center>\n",
+    "\n",
+    "Each move can be defined as a function of `cube_list`. For each of the 12 moves, write a function that:\n",
+    "- Takes in a list input `cube_list` as a list representation of a cube\n",
+    "- Returns the list representation of the cube after it has undergone that move"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#TASK 2\n",
+    "\n",
+    "def move_U(cube_list):\n",
+    "\n",
+    "def move_U_prime(cube_list):\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Task 3: Time To Fix It\n",
+    "Write a program that:\n",
+    "- Prints out an unsolved cube state `scrambled_cube` using the `print_cube` function\n",
+    "- Prompts the user to enter a move: `U`, `U'`, `D`, `D'`, `R`, `R'`, `L`, `L'`, `F`, `F'`, `B`, `B'`\n",
+    "- Change `scrambled_cube` according to their input and print it using the `print_cube` function\n",
+    "- Keep asking for new inputs until the cube is solved i.e. all faces have only one colour"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#TASK 3\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.1"
+  },
+  "vscode": {
+   "interpreter": {
+    "hash": "a42ccb73e7d9bfdf27e036f1d2b8b681e55fc0743cc5586bc2474d4a60f4b886"
+   }
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
