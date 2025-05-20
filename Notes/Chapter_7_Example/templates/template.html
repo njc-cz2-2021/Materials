@@ -1,7 +1,10 @@
+<!--Template.html-->
+<!--Notice that there is no doctype html but the file is still rendered-->
+<!--The extend statement takes block statement below and inserts them into block statement of the same name in the extended file-->
 {% extends "layout.html" %}
 {% block content %}
   <h3> This is the start of my child template</h3>
   <br>
-  <p>Not My string: {{5+2}}</p>
+  <p>Not My string: {{5+2}}</p><!--Notice how {{5+2}} is not in the final HTML code but replaced with 7. This is a result of using flask.rendertemplate()-->
   <h3> This is the end of my child template</h3>
 {% endblock %}

@@ -1,3 +1,4 @@
+<!--layout.html-->
 <!DOCTYPE html>
 <html>
 
@@ -38,7 +39,9 @@
         <div class="container">
       <h2>This is part of my base template</h2>
       <br>
-      {% block content %}{% endblock %}
+      {% block content %}
+      <h1>I'm replacable! I won't show as im replaced by the block 'content' from template.html</h1>
+      {% endblock %}
       <br>
       <h2>This is part of my base template</h2>
       <br>
