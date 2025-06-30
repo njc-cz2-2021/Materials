@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualifiers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <table class="table">
+        <tr>
+            <th>Competitor</th>
+            <th>Total Score</th>
+        </tr>
+        {% for competitor in scores %}
+        <tr>
+            <td>{{ competitor[0] }}</td>
+            <td>{{ competitor[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

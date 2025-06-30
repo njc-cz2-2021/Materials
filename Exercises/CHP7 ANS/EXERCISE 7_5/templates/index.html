@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7.5</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <table class="table">
+        <tr><th>Navigation</th></tr>
+        <tr><td><a href="{{ url_for('round1') }}">Round 1 Scores</a></td></tr>
+        <tr><td><a href="{{ url_for('round2') }}">Round 2 Scores</a></td></tr>
+        <tr><td><a href="{{ url_for('round3') }}">Round 3 Scores</a></td></tr>
+        <tr><td><a href="{{ url_for('mean') }}"> Mean Scores</a></td></tr>
+        <tr><td><a href="{{ url_for('qualifiers') }}">Qualifiers</a></td></tr>
+    </table>
+</body>
+</html>

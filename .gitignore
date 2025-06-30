@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment folder
+.venv/
+.env/
+.env.*
+
+# Flask instance folder (if you have one)
+instance/
+
+# Pytest cache
+.pytest_cache/
+
+# VS Code settings folder
+.vscode/
+
+# macOS system files
+.DS_Store
+
