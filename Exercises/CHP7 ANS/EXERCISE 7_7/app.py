@@ -8,7 +8,7 @@ color_map = {
     "000": "red",
     "001": "white",
     "010": "yellow",
-    "011": "blue",
+    "011 ": "blue",
     "100": "black",
     "110": "green"
 }
