@@ -1,12 +1,12 @@
-with open("/workspaces/Materials/Exercises/CHP7 ANS/EXERCISE 7_6/MEMBER.txt", "r") as f:
+with open("./Materials/Exercises/CHP7 ANS/EXERCISE 7_6/MEMBER.txt", "r") as f:
     lines = f.readlines()
     members = {line.split(",")[0]: ([line.split(",")[2].strip()+ " " + line.split(",")[1].strip()]) for line in lines}
 
-with open("/workspaces/Materials/Exercises/CHP7 ANS/EXERCISE 7_6/BOOK.txt", "r") as f:
+with open("./Materials/Exercises/CHP7 ANS/EXERCISE 7_6/BOOK.txt", "r") as f:
     lines = f.readlines()
     books = {line.split(",")[0].strip(): line.split(",")[1].strip() for line in lines}
 
-with open("/workspaces/Materials/Exercises/CHP7 ANS/EXERCISE 7_6/LOAN.txt", "r") as f:
+with open("./Materials/Exercises/CHP7 ANS/EXERCISE 7_6/LOAN.txt", "r") as f:
     lines = f.readlines()
     for line in lines:
         entry, member_id, book_id, date, status = line.split(",")

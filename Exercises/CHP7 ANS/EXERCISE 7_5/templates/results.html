@@ -1,33 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Qualifiers</title>
+    <title>Round {{ round_number }} Results</title>
     <style>
         table {
             border-collapse: collapse;
         }
         th, td {
-            border: 1px solid #333;
+            border: 1px solid black;
         }
     </style>
 </head>
 <body>
-    <h2 style="text-align:center;">Qualifiers for the Final</h2>
+    <h2>Results for Round {{ round_number }}</h2>
     <table>
         <thead>
             <tr>
                 <th>Competitor</th>
-                <th>Total Score</th>
-                <th>Status</th>
+                <th>Score</th>
             </tr>
         </thead>
         <tbody>
-            {% for name, total, status in results %}
+            {% for name, score in results %}
             <tr>
                 <td>{{ name }}</td>
-                <td>{{ total }}</td>
-                <td>{{ status }}</td>
+                <td>{{ score }}</td>
             </tr>
             {% endfor %}
         </tbody>
