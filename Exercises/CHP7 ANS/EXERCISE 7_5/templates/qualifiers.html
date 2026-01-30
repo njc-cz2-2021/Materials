@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Qualifiers</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Qualifiers for the Final</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Competitor</th>
+                <th>Total Score</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for name, total, status in results %}
+            <tr>
+                <td>{{ name }}</td>
+                <td>{{ total }}</td>
+                <td>{{ status }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
