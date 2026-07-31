@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercise 7.6</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>Exercise 7.6</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Member Name</th>
+                    <th>Books Not Returned</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entry in ans %}
+                <tr>
+                    <td>{{ entry[0] }}</td>
+                    <td>
+                        <ul>
+                            {% for book in entry[1:] %}
+                            <li>{{ book }}</li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

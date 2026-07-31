@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <div>
+        <h1>{{ brand_name }}</h1>
+
+        {% for item in info %}
+            <p> Model Name: {{item["model"]}} </p>
+            <p> Colour: {{item["colour"]}} </p>
+            <p> Price: ${{item["price"]}} </p>
+        {% endfor %}
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+import base64
+from Crypto.Cipher import AES
+
+# Given data
+key = b"K0A8nglgoHG0n8V3nusG7LXBOZcVMy0C5nriszw7"  # 32-byte key for AES-256
+encoded = "sEQYmMXykCXuT3bCPBXcGaRURLgxfFxksEEoHhImgAvpa2wXJyiUoVCuaP9wMJQp9EzY4HRHZBvDkEaQOYIRF"
+
+# Prepare ciphertext (add Base64 padding if needed)
+ciphertext = base64.b64decode(encoded + '=' * (-len(encoded) % 4))
+
+# Decrypt (ECB mode)
+try:
+    cipher = AES.new(key, AES.MODE_ECB)
+    plaintext = cipher.decrypt(ciphertext)
+    print("Decrypted:", plaintext)
+except Exception as e:
+    print("AES decryption failed:", e)

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Round {{ round_number }} Results</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Results for Round {{ round_number }}</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Competitor</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for name, score in results %}
+            <tr>
+                <td>{{ name }}</td>
+                <td>{{ score }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

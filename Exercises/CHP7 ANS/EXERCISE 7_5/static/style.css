@@ -1,0 +1,12 @@
+.table {
+    font-size: 20px;
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}

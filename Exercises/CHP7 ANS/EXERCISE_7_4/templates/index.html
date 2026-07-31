@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7.4</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>People</h2>
+    <table>
+        <tr>
+            <th>Full Name</th>
+            <th>Screen Name</th>
+            <th>Role</th>
+        </tr>
+        {% for person in people %}
+        <tr>
+            <td>{{ person[0] }}</td>
+            <td>{{ person[1] }}</td>
+            <td>{{ person[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
