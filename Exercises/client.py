@@ -9,13 +9,11 @@ def printgrid(grid):
 
 def main():
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    client.connect(('localhost', 12345))
+    client.connect(('localhost', 11111))
     print("Connected to server!")
 
     raw = client.recv(4096).decode()
     grid = json.loads(raw)
-    print("=== BATTLESHIP ===")
-    print("X=ship(hidden)  S=hit  0=miss")
     printgrid(grid)
 
     missiles = 5
@@ -23,8 +21,8 @@ def main():
     while missiles > 0:
         print(f"Missiles remaining: {missiles}")
         try:
-            x = int(input("Enter x (column): "))
-            y = int(input("Enter y (row):    "))
+            x = int(input("Enter x: "))
+            y = int(input("Enter y: "))
         except ValueError:
             print("Invalid input, enter numbers only.")
             continue
@@ -40,7 +38,7 @@ def main():
         missiles -= 1
 
         if response['game_over']:
-            print("=== GAME OVER — Final board revealed ===")
+            print("game over")
             break
 
     client.close()

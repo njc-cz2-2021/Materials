@@ -1,6 +1,9 @@
 import socket
 import json
 
+with open ('./resources/GAME.TXT') as f:
+    data = [x.strip() for x in f.readlines()]
+
 def printgrid(grid):
     for row in grid:
         print(''.join(row))
@@ -21,7 +24,7 @@ def game_server(conn):
     conn.sendall(json.dumps(hide_ships(grid)).encode())
 
     while missiles > 0:
-        raw = conn.recv(1024).decode()
+        raw = conn.recv(4029).decode()
         x, y = json.loads(raw)
 
         if grid[y][x] == 'X':
@@ -34,7 +37,7 @@ def game_server(conn):
             result = "ALREADY_SHOT"
 
         missiles -= 1
-        print(f"Client fired at ({x},{y}): {result} | Missiles left: {missiles}")
+        print(f"u fired at ({x},{y}): {result}, missiles left: {missiles}")
         printgrid(grid)
 
         if missiles == 0:
@@ -49,7 +52,6 @@ def game_server(conn):
                 "result": result,
                 "game_over": False
             }
-
         conn.sendall(json.dumps(response).encode())
 
     conn.close()
@@ -57,7 +59,7 @@ def game_server(conn):
 
 def main():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server.bind(('localhost', 1234))
+    server.bind(('localhost', 11111))
     server.listen(1)
     print("Server waiting for player...")
 
